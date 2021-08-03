@@ -1,8 +1,5 @@
 import mongoose from "mongoose";
-interface ITodo{
-    title : string;
-    description : string;
-}
+
 
 const todoSchema = new mongoose.Schema({
     title : {
@@ -14,6 +11,6 @@ const todoSchema = new mongoose.Schema({
         required : true
     }
 })
-const Todo = mongoose.model('Todo', todoSchema)
-export {Todo}
+const Todo = mongoose.model("Todo", todoSchema);
+export {Todo};
 
