@@ -13,7 +13,7 @@ mongoose.connect('mongodb+srv://MatiusRock:3CASL3u1Kpibt7Yi@cluster0.xglab.mongo
 
 export const loadApiEndpoints = (app: Application): void => {
  
-  app.get("/products", (req: Request, res: Response) => {
+  app.get("/api", (req: Request, res: Response) => {
     return res.status(200).send(CoursesData);
   });
 };

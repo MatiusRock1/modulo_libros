@@ -1,4 +1,9 @@
 import mongoose from 'mongoose';
+interface ITodo{
+    title : string;
+    description : string;
+}
+
 const todoSchema = new mongoose.Schema({
     title : {
         type : String,
@@ -10,17 +15,5 @@ const todoSchema = new mongoose.Schema({
     }
 })
 const Todo = mongoose.model('Todo', todoSchema)
-//export {Todo}
-new Todo({
-    titl: 'some title',
-    description: 'some description'
-})
-new Todo({
-    titl: 44,
-    description: 'some description'
-})
-new Todo({
-    titl: 'some title',
-    description: 'some description',
-    hour: 1
-})
+export {Todo}
+
